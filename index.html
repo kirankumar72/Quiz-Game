@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+   <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="form-container">
+        <h1>Quiz</h1>
+        <form id="quiz-form">
+            <!-- First Question -->
+            <div class="question-container" id="question1">
+                <p>What is the capital of France?</p>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q1-option1" name="q1" value="paris">
+                    <label for="q1-option1">Paris</label>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q1-option2" name="q1" value="london">
+                    <label for="q1-option2">London</label>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q1-option3" name="q1" value="berlin">
+                    <label for="q1-option3">Berlin</label>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="next-button" onclick="showNextQuestion(1)">Next</button>
+                </div>
+            </div>
+
+            <!-- Second Question -->
+            <div class="question-container" id="question2">
+                <p>What is 2 + 2?</p>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q2-option1" name="q2" value="3">
+                    <label for="q2-option1">3</label>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q2-option2" name="q2" value="4">
+                    <label for="q2-option2">4</label>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q2-option3" name="q2" value="5">
+                    <label for="q2-option3">5</label>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="next-button" onclick="showNextQuestion(2)">Next</button>
+                </div>
+            </div>
+
+            <!-- Third Question -->
+            <div class="question-container" id="question3">
+                <p>What is the largest planet in our solar system?</p>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q3-option1" name="q3" value="mars">
+                    <label for="q3-option1">Mars</label>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q3-option2" name="q3" value="venus">
+                    <label for="q3-option2">Venus</label>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q3-option3" name="q3" value="jupiter">
+                    <label for="q3-option3">Jupiter</label>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="next-button" onclick="showNextQuestion(3)">Next</button>
+                </div>
+            </div>
+
+            <!-- Fourth Question -->
+            <div class="question-container" id="question4">
+                <p>What is the largest mammal on Earth?</p>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q4-option1" name="q4" value="elephant">
+                    <label for="q4-option1">Elephant</label>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q4-option2" name="q4" value="bluewhale">
+                    <label for="q4-option2">Blue Whale</label>
+                </div>
+                <div class="horizontal-line"></div>
+                <div class="option-container">
+                    <input type="radio" id="q4-option3" name="q4" value="giraffe">
+                    <label for="q4-option3">Giraffe</label>
+                </div>
+                <div class="button-container">
+                    <button type="button" class="next-button" onclick="showResult()">Submit</button>
+                </div>
+            </div>
+
+            <!-- Thank you and result sections -->
+            <div class="thank-you" id="thankYou">
+                <p>Thank you for completing the quiz!</p>
+            </div>
+            <div class="result" id="result">
+                <p>Your result: <span id="score">0</span> out of 4</p>
+                <button class="home-page-button" onclick="goToHomePage()">HomePage</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
